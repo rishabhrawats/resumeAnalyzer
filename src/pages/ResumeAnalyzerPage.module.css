@@ -1,0 +1,75 @@
+.analyzerPage {
+  padding: 40px 0;
+  background-color: var(--background-color);
+}
+
+.main {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.inputSection {
+  flex: 1;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.analyzeButton {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 30px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.analyzeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.analyzeButton:disabled {
+  background: var(--light-gray);
+  cursor: not-allowed;
+}
+
+.resultSection {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .inputContainer {
+    flex-direction: column;
+  }
+}

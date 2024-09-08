@@ -1,0 +1,85 @@
+.resultContainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.resultTitle {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.scoreCircle {
+    width: 200px;
+    margin: 0 auto 2rem;
+}
+
+.circularChart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circleBg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+    stroke: #4CAF50;
+}
+
+.percentage {
+    fill: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+    font-weight: 600;
+}
+
+.analysisSection {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.analysisSection h3 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.analysisSection p {
+    margin: 0.5rem 0;
+    color: #7f8c8d;
+}
+
+.analysisSection ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.analysisSection li {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
